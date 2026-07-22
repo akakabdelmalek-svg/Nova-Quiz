@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Game</title>
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="cs.css" />
+  <link rel="shortcut icon" href="pn.png" type="image/x-icon">
+</head>
+<body>
+  <main class="quiz-shell">
+    <h1>Quiz Game</h1>
+
+    <section class="difficulty">
+      <h2>Choisis ton niveau :</h2>
+      <button class="level-btn" data-level="easy">Facile</button>
+      <button class="level-btn" data-level="medium">Moyen</button>
+      <button class="level-btn" data-level="hard">Difficile</button>
+    </section>
+
+    <section class="info-panel">
+      <div class="score">Score : <span id="score">0</span></div>
+      <div class="question-number">Question <span id="question-number">0</span> / <span id="question-total">0</span></div>
+      <div id="timer">⏱️ Temps : 0s</div>
+    </section>
+
+    <section class="quiz-card">
+      <p id="question-text">Choisis un niveau pour commencer.</p>
+      <div id="options"></div>
+    </section>
+
+    <section class="actions">
+      <button class="button" id="next-btn" disabled>Suivante</button>
+      <button class="button tertiary" id="restart-btn" hidden>Rejouer</button>
+    </section>
+
+    <div class="message" id="message"></div>
+  </main>
+
+  <!-- mon  JS -->
+  <script src="js.js"></script>
+</body>
+</html>
