@@ -186,9 +186,10 @@ body {
   color: #e2e8f0;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 720px) {
   .info-panel {
-    grid-template-columns: 1fr;
+    width: 640px;
+    height: 1280px ;
   }
 
   .levels {
