@@ -188,7 +188,7 @@ body {
 
 @media (max-width: 720px) {
   .quiz-shell {
-    width: 100%;
+    width: 599px;
     padding: 20px;
     border-radius: 20px;
   }
