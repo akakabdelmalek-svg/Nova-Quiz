@@ -188,11 +188,37 @@ body {
 
 @media (max-width: 720px) {
   .quiz-shell {
-    width: 640px;
-    height: 1280px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .info-panel {
+    grid-template-columns: 1fr; /* une seule colonne sur mobile */
+    gap: 10px;
+  }
+
+  .quiz-card {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .brand h1 {
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
   }
 
   .levels {
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .option-btn {
+    padding: 14px;
+    font-size: 0.95rem;
+  }
+
+  .button {
+    max-width: 100%;
   }
 }
